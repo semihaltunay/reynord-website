@@ -237,11 +237,12 @@ h2 {
 .hero .eyebrow { color: var(--accent); }
 .hero .lead { color: var(--on-stage-2); margin-top: 24px; max-width: 52ch; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
-.hero-visual { position: relative; aspect-ratio: 1.05; align-self: end; }
+.hero-visual { position: relative; aspect-ratio: 1.2; align-self: end; }
 .hero-visual img { position: absolute; height: auto; }
-.hv-f300 { right: 0; bottom: 0; width: 88%; }
+/* F9XX is the physically larger unit: keep it bigger than the F300 */
+.hv-f300 { left: 0; bottom: 0; width: 50%; }
 .hv-f9xx {
-  left: 0; bottom: 4%; width: 52%;
+  right: 0; bottom: 3%; width: 70%;
   filter: drop-shadow(0 30px 40px rgba(0, 0, 0, .6));
 }
 
