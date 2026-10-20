@@ -239,10 +239,11 @@ h2 {
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
 .hero-visual { position: relative; aspect-ratio: 1.2; align-self: end; }
 .hero-visual img { position: absolute; height: auto; }
-/* F9XX is the physically larger unit: keep it bigger than the F300 */
-.hv-f300 { left: 0; bottom: 0; width: 50%; }
+/* True relative scale, calibrated on the identical 7" display in both photos
+   (F9XX 186 mm tall, F300 149.2 mm tall): F9XX image width = 1.07 x F300 image width */
+.hv-f300 { left: 0; bottom: 0; width: 58%; }
 .hv-f9xx {
-  right: 0; bottom: 3%; width: 70%;
+  right: 0; bottom: 1.5%; width: 62%;
   filter: drop-shadow(0 30px 40px rgba(0, 0, 0, .6));
 }
 
@@ -297,8 +298,9 @@ h2 {
   border-bottom: 1px solid var(--line);
 }
 .family-stage img { width: auto; height: 86%; transition: transform .4s; }
-.family-stage .fs-f9xx { margin-bottom: 5%; height: 82%; filter: drop-shadow(0 18px 24px rgba(7, 17, 27, .28)); }
-.family-stage .fs-f300 { height: 90%; }
+/* Same true-scale ratio as the hero: F9XX image is drawn 1.27x taller than the F300 image */
+.family-stage .fs-f9xx { margin-bottom: 3%; height: 84%; filter: drop-shadow(0 18px 24px rgba(7, 17, 27, .28)); }
+.family-stage .fs-f300 { height: 66%; }
 .family-card:hover .family-stage img { transform: translateY(-6px); }
 .family-body { display: flex; flex-direction: column; gap: 12px; padding: 28px 28px 30px; flex: 1; }
 .family-body h3 { font-size: clamp(26px, 2.6vw, 32px); font-stretch: 110%; letter-spacing: -.015em; }
