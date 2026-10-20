@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>REYNORD | Contactless RFID Terminals</title>
+<meta name="description" content="REYNORD designs contactless RFID terminals: fareOpen F910 and F930 validators for public-transport fare collection, and the F300 series for time attendance and access control.">
+<meta name="theme-color" content="#004D7F">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.reynord.com/">
+<meta property="og:title" content="REYNORD | Contactless RFID Terminals">
+<meta property="og:description" content="fareOpen F910 / F930 fare validators and F300 time &amp; access control terminals.">
+<meta property="og:image" content="https://www.reynord.com/assets/img/fareopen-f9xx-front.webp">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "REYNORD",
+  "url": "https://www.reynord.com/",
+  "logo": "https://www.reynord.com/assets/img/reynord-logo.svg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Imstedt 12",
+    "addressLocality": "Hamburg",
+    "addressCountry": "DE"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- REYNORD wordmark: Ethnocentric outlines taken from the font embedded in the F9XX datasheet -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="logo" viewBox="61 -680 6991 691"><path d="M1012 0H735L586 -177H268V0H61V-342H643Q691 -342 724.0 -362.0Q757 -382 757 -417Q757 -456 727.0 -475.5Q697 -495 643 -495H61L196 -669H626Q683 -669 744.0 -658.5Q805 -648 855.0 -621.0Q905 -594 937.5 -548.0Q970 -502 970 -430Q970 -391 958.0 -356.0Q946 -321 923.5 -293.0Q901 -265 868.5 -245.5Q836 -226 795 -218Q812 -205 833.0 -185.0Q854 -165 889 -130ZM1903 -172 1770 0H1126V-669H1901L1767 -495H1334V-415H1864L1745 -263H1334V-172ZM2972 -669 2575 -221V0H2367V-222L1959 -669H2225L2385 -483Q2393 -474 2406.0 -459.5Q2419 -445 2433.0 -429.0Q2447 -413 2459.0 -399.0Q2471 -385 2476 -378Q2486 -392 2505.0 -416.0Q2524 -440 2560 -484L2712 -669ZM3760 11Q3740 11 3720.5 4.5Q3701 -2 3677 -25L3267 -393V0H3079V-555Q3079 -588 3088.5 -612.0Q3098 -636 3113.5 -651.0Q3129 -666 3149.5 -673.0Q3170 -680 3192 -680Q3211 -680 3230.5 -673.5Q3250 -667 3275 -644L3685 -276V-669H3874V-115Q3874 -82 3864.5 -58.0Q3855 -34 3839.5 -18.5Q3824 -3 3803.0 4.0Q3782 11 3760 11ZM4504 -680Q4748 -680 4870.5 -597.0Q4993 -514 4993 -335Q4993 -155 4871.0 -72.0Q4749 11 4504 11Q4258 11 4136.5 -72.0Q4015 -155 4015 -335Q4015 -514 4137.0 -597.0Q4259 -680 4504 -680ZM4504 -163Q4582 -163 4636.0 -169.5Q4690 -176 4723.5 -195.0Q4757 -214 4772.0 -247.5Q4787 -281 4787 -335Q4787 -389 4772.0 -422.5Q4757 -456 4723.5 -474.5Q4690 -493 4636.0 -499.5Q4582 -506 4504 -506Q4426 -506 4372.0 -499.5Q4318 -493 4284.5 -474.5Q4251 -456 4236.0 -422.5Q4221 -389 4221 -335Q4221 -281 4236.0 -247.5Q4251 -214 4284.5 -195.0Q4318 -176 4372.0 -169.5Q4426 -163 4504 -163ZM6087 0H5810L5661 -177H5343V0H5136V-342H5718Q5766 -342 5799.0 -362.0Q5832 -382 5832 -417Q5832 -456 5802.0 -475.5Q5772 -495 5718 -495H5136L5271 -669H5701Q5758 -669 5819.0 -658.5Q5880 -648 5930.0 -621.0Q5980 -594 6012.5 -548.0Q6045 -502 6045 -430Q6045 -391 6033.0 -356.0Q6021 -321 5998.5 -293.0Q5976 -265 5943.5 -245.5Q5911 -226 5870 -218Q5887 -205 5908.0 -185.0Q5929 -165 5964 -130ZM7052 -341Q7052 -268 7021.5 -205.5Q6991 -143 6937.5 -97.5Q6884 -52 6810.0 -26.0Q6736 0 6649 0H6201V-417H6409V-172H6649Q6692 -172 6728.5 -183.5Q6765 -195 6791.0 -216.0Q6817 -237 6832.0 -266.5Q6847 -296 6847 -332Q6847 -367 6832.0 -397.0Q6817 -427 6790.0 -448.5Q6763 -470 6727.0 -482.5Q6691 -495 6649 -495H6201L6333 -669H6649Q6737 -669 6811.0 -645.0Q6885 -621 6938.5 -577.5Q6992 -534 7022.0 -473.5Q7052 -413 7052 -341Z"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top" aria-label="REYNORD home">
+      <svg class="logo" viewBox="0 0 6991 691" aria-hidden="true"><use href="#logo"/></svg>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="#products">Products</a>
+      <a href="#fareopen">fareOpen F9XX</a>
+      <a href="#f300">F300</a>
+      <a href="#f9xx-specs">Technical data</a>
+      <a class="btn btn-primary btn-sm" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Contactless RFID terminals</p>
+        <h1>Tap-ready hardware for transit, time and access.</h1>
+        <p class="lead">REYNORD designs contactless reader terminals for two demanding jobs: validating fares on public transport, and recording working time and controlling doors in the workplace.</p>
+        <div class="actions">
+          <a class="btn btn-accent" href="#fareopen">fareOpen F910 / F930</a>
+          <a class="btn btn-ghost" href="#f300">F300 series</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img class="hv-f300" src="assets/img/f300-front.webp" width="1270" height="1039"
+             alt="REYNORD F300 terminal showing a time-clock screen">
+        <img class="hv-f9xx" src="assets/img/fareopen-f9xx-front.webp" width="1119" height="1088"
+             alt="fareOpen F9XX validator showing a card-reading screen">
+      </div>
+    </div>
+  </section>
+
+  <section class="ribbon" aria-label="Key capabilities across the range">
+    <div class="wrap ribbon-grid">
+      <div><span class="k">Cards</span><span class="v">MIFARE Plus · DESFire · ISO 14443A</span></div>
+      <div><span class="k">Payments</span><span class="v">EMV L1 &amp; L2 contactless</span></div>
+      <div><span class="k">Tickets</span><span class="v">QR · Data Matrix · PDF417</span></div>
+      <div><span class="k">Networks</span><span class="v">Ethernet · PoE · Wi-Fi · 4G LTE</span></div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT FAMILIES ============ -->
+  <section class="section" id="products" aria-labelledby="products-title">
+    <div class="wrap">
+      <header class="section-head split">
+        <div>
+          <p class="eyebrow">Products</p>
+          <h2 id="products-title">Two series. One contactless core.</h2>
+        </div>
+        <p class="lead">Every REYNORD terminal pairs a contactless card reader with a bright touch-ready display, real audio and wired I/O, then specialises for where it is installed: on board a vehicle, or at the office door.</p>
+      </header>
+
+      <div class="family">
+        <a class="family-card" href="#fareopen">
+          <div class="family-stage">
+            <img class="fs-f9xx" src="assets/img/fareopen-f9xx-front.webp" width="1119" height="1088" loading="lazy"
+                 alt="fareOpen F9XX contactless validator">
+          </div>
+          <div class="family-body">
+            <p class="tag">Fare collection</p>
+            <h3>fareOpen F9XX</h3>
+            <p>Public-transport grade validators for open- and closed-loop payments: EMV bank cards, MIFARE transit cards and QR tickets, in a single tap.</p>
+            <ul class="chips" aria-label="Models"><li>F910</li><li>F930</li></ul>
+            <p class="uses">In-vehicle validation · Turnstile versions on request</p>
+            <span class="more">Explore fareOpen <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="family-card" href="#f300">
+          <div class="family-stage">
+            <img class="fs-f300" src="assets/img/f300-front.webp" width="1270" height="1039" loading="lazy"
+                 alt="F300 time and access control terminal">
+          </div>
+          <div class="family-body">
+            <p class="tag">Time &amp; access control</p>
+            <h3>F300 series</h3>
+            <p>A touch-screen RFID terminal for time attendance and access control, with Wi-Fi, Ethernet, a door relay and secure HTTP / MQTT integration.</p>
+            <ul class="chips" aria-label="Models"><li>F300</li></ul>
+            <p class="uses">Time attendance · Door access · Duty &amp; absence logging</p>
+            <span class="more">Explore F300 <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ fareOpen F9XX ============ -->
+  <section class="section section-tint" id="fareopen" aria-labelledby="fareopen-title">
+    <div class="wrap">
+      <header class="section-head split">
+        <div>
+          <p class="eyebrow"><span class="idx">01</span> fareOpen F9XX · Fare collection</p>
+          <h2 id="fareopen-title">Public-transport grade contactless validators.</h2>
+        </div>
+        <p class="lead">F910 and F930 handle open- and closed-loop payments. They read high-end MIFARE Plus and DESFire cards under ISO 14443A, accept EMV L1 &amp; L2 contactless credit cards, and scan mobile or printed QR tickets, with fast online transaction validation.</p>
+      </header>
+
+      <div class="showcase">
+        <figure class="stage showcase-stage">
+          <img src="assets/img/fareopen-f9xx-front.webp" width="1119" height="1088" loading="lazy"
+               alt="fareOpen F9XX validator, front view, with contactless reader below the display">
+          <figcaption>fareOpen F9XX · 1024 × 600 IPS · 900 nits</figcaption>
+        </figure>
+
+        <ol class="features">
+          <li>
+            <h3>Open &amp; closed loop</h3>
+            <p>EMV L1 &amp; L2 contactless bank cards alongside MIFARE Plus and DESFire transit cards, from the same reader.</p>
+          </li>
+          <li>
+            <h3>QR in and out</h3>
+            <p>A built-in reader takes mobile and printed QR tickets, and the display can generate QR codes on screen.</p>
+          </li>
+          <li>
+            <h3>Top-up, even offline</h3>
+            <p>A token-based security structure lets MIFARE Plus and DESFire cards be topped up online or while temporarily offline. Two SAM slots secure payments and the device.</p>
+          </li>
+          <li>
+            <h3>Flexible ticketing rules</h3>
+            <p>Fast online validation, plus white lists for time-limited, route-based and reservation-based ticketing.</p>
+          </li>
+          <li>
+            <h3>Readable in any light</h3>
+            <p>1024 × 600 IPS display with up to 900 nits, brightness that follows ambient light, and a 172° viewing angle.</p>
+          </li>
+          <li>
+            <h3>Real audio</h3>
+            <p>5 W audio output with a speech synthesizer for spoken passenger feedback.</p>
+          </li>
+          <li>
+            <h3>Made for vehicles</h3>
+            <p>9–36 V DC or PoE (IEEE 802.3af), with DC input prioritized. Vehicle unique-ID identification is standard.</p>
+          </li>
+          <li>
+            <h3>Ready to integrate</h3>
+            <p>Two opto-isolated inputs and two relay outputs as standard. CAN-FD, RS485 and 4G LTE are optional; turnstile versions are available on request.</p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Models -->
+      <div class="subhead" id="models">
+        <h3 class="h3">F910 or F930: one validator, two compute platforms.</h3>
+        <p>Both models are functionally identical: same enclosure, display, reader and I/O. Choose by the software you plan to run.</p>
+      </div>
+
+      <div class="models">
+        <article class="model">
+          <img class="model-art" src="assets/img/fareopen-lineart.png" width="1503" height="1494" loading="lazy" alt="">
+          <div class="model-body">
+            <p class="tag">RTOS platform · cost-optimized</p>
+            <h4 class="model-name">F910</h4>
+            <p>For clean-sheet software, or a comprehensive port of existing code. The same functionality at a substantially lower cost, without significant compromise.</p>
+            <dl class="kv">
+              <div><dt>CPU</dt><dd>RISC-V, 360 MHz</dd></div>
+              <div><dt>RAM</dt><dd>32 MB</dd></div>
+              <div><dt>Storage</dt><dd>16 MB NOR flash + 16 GB SDIO Gen3 card</dd></div>
+              <div><dt>OS</dt><dd>FreeRTOS / SafeOS</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="model">
+          <img class="model-art" src="assets/img/fareopen-lineart.png" width="1503" height="1494" loading="lazy" alt="">
+          <div class="model-body">
+            <p class="tag">Linux platform</p>
+            <h4 class="model-name">F930</h4>
+            <p>Larger RAM and program memory for up-to-date Linux systems. The right fit when existing software is to be ported, or memory needs go beyond general fare collection.</p>
+            <dl class="kv">
+              <div><dt>CPU</dt><dd>TX8M i.MX 8 series, 1.5 GHz</dd></div>
+              <div><dt>RAM</dt><dd>1 GB</dd></div>
+              <div><dt>Storage</dt><dd>512 MB eMMC + 16 GB SDIO Gen3 card</dd></div>
+              <div><dt>OS</dt><dd>Linux kernel 5.10</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+
+      <!-- Connectors -->
+      <div class="subhead">
+        <h3 class="h3">Connections at a glance</h3>
+        <p>All interfaces are grouped on one connector panel; the rear carries a VESA 75 mount. Numbering follows the datasheet drawing.</p>
+      </div>
+
+      <div class="ports-grid">
+        <figure class="stage ports-stage">
+          <div class="ports-media">
+            <img src="assets/img/fareopen-f9xx-rear.webp" width="1500" height="621" loading="lazy"
+                 alt="Rear view of the fareOpen F9XX with VESA mount and connector panel">
+            <button type="button" class="spot" style="--x:15.2%;--y:62%" data-spot="1" aria-label="1: DC power input and vehicle unique-ID port">1</button>
+            <button type="button" class="spot" style="--x:23.6%;--y:62%" data-spot="2" aria-label="2: RS485, CAN and I/O port">2</button>
+            <button type="button" class="spot" style="--x:71.3%;--y:66%" data-spot="3" aria-label="3: USB-OTG port">3</button>
+            <button type="button" class="spot" style="--x:77.4%;--y:58%" data-spot="4" aria-label="4: USB host port">4</button>
+            <button type="button" class="spot" style="--x:84.8%;--y:59%" data-spot="5" aria-label="5: Ethernet and PoE connector">5</button>
+          </div>
+        </figure>
+        <ol class="port-list">
+          <li data-spot="1"><span class="num">1</span><div><strong>DC power &amp; vehicle ID</strong><span>9–36 V DC input and vehicle unique-ID port</span></div></li>
+          <li data-spot="2"><span class="num">2</span><div><strong>RS485, CAN &amp; I/O</strong><span>2 opto-isolated inputs, 2 relay outputs (NO)</span></div></li>
+          <li data-spot="3"><span class="num">3</span><div><strong>USB-OTG</strong><span>USB on-the-go port</span></div></li>
+          <li data-spot="4"><span class="num">4</span><div><strong>USB host</strong><span>USB host port</span></div></li>
+          <li data-spot="5"><span class="num">5</span><div><strong>Ethernet &amp; PoE</strong><span>10/100BASE-T, IEEE 802.3af</span></div></li>
+        </ol>
+      </div>
+
+      <!-- Technical data -->
+      <div class="subhead subhead-row" id="f9xx-specs">
+        <div>
+          <h3 class="h3">Technical data</h3>
+          <p>fareOpen F910 and F930. Shared values span both columns.</p>
+        </div>
+        <a class="btn btn-outline" href="assets/docs/Reynord_F9XX_Validator_Datasheet.pdf" download>
+          <span aria-hidden="true">↓</span> Datasheet (PDF)
+        </a>
+      </div>
+
+      <div class="table-card">
+        <table class="spec-table">
+          <thead>
+            <tr><th scope="col">Specification</th><th scope="col">F910</th><th scope="col">F930</th></tr>
+          </thead>
+          <tbody>
+            <tr class="group"><th colspan="3" scope="colgroup">General</th></tr>
+            <tr><th scope="row">Dimensions</th><td colspan="2">186 × 183 × 32 mm (without mount piece)</td></tr>
+            <tr><th scope="row">Mounting</th><td colspan="2">VESA 75</td></tr>
+            <tr><th scope="row">Protection</th><td colspan="2">IP2X, designed for in-vehicle operation</td></tr>
+            <tr><th scope="row">Power input</th><td colspan="2">9–36 V DC, 10 W · PoE IEEE 802.3af (DC input prioritized)</td></tr>
+
+            <tr class="group"><th colspan="3" scope="colgroup">Platform</th></tr>
+            <tr><th scope="row">CPU</th><td data-label="F910">RISC-V, 360 MHz</td><td data-label="F930">TX8M i.MX 8 series, 1.5 GHz</td></tr>
+            <tr><th scope="row">Memory</th><td data-label="F910">32 MB RAM · 16 MB NOR flash</td><td data-label="F930">1 GB RAM · 512 MB eMMC</td></tr>
+            <tr><th scope="row">Storage card</th><td colspan="2">16 GB SDIO Gen3</td></tr>
+            <tr><th scope="row">Operating system</th><td data-label="F910">FreeRTOS / SafeOS</td><td data-label="F930">Linux kernel 5.10</td></tr>
+
+            <tr class="group"><th colspan="3" scope="colgroup">Display &amp; audio</th></tr>
+            <tr><th scope="row">Display</th><td colspan="2">1024 × 600 IPS, up to 900 nits, ambient-light auto brightness, 172° viewing angle</td></tr>
+            <tr><th scope="row">Audio</th><td colspan="2">5 W real audio output with speech synthesizer</td></tr>
+
+            <tr class="group"><th colspan="3" scope="colgroup">Contactless &amp; QR</th></tr>
+            <tr><th scope="row">Contactless</th><td colspan="2">EMV L1 &amp; L2 certified · MIFARE suite (MIFARE Plus, DESFire) &amp; FeliCa · ISO 14443A · Apple VAS &amp; Google Smart Tap</td></tr>
+            <tr><th scope="row">Payment kernels</th><td colspan="2">Latest Visa, Mastercard, American Express &amp; Discover L2 kernels, plus extensive international kernels</td></tr>
+            <tr><th scope="row">Transit kernels</th><td colspan="2">Visa, American Express, Discover &amp; Interac Transit</td></tr>
+            <tr><th scope="row">Security</th><td colspan="2">2 SAM slots, token-based online / offline top-up</td></tr>
+            <tr><th scope="row">QR reader</th><td colspan="2">QR Code, Data Matrix, PDF417, Micro QR, Micro PDF417</td></tr>
+            <tr><th scope="row">QR field of view</th><td colspan="2">Horizontal 67°, vertical 53°</td></tr>
+            <tr><th scope="row">QR scan angles</th><td colspan="2">Roll 360°, pitch 65°, yaw 65°</td></tr>
+
+            <tr class="group"><th colspan="3" scope="colgroup">Interfaces</th></tr>
+            <tr><th scope="row">Ethernet</th><td colspan="2">10/100BASE-T with PoE</td></tr>
+            <tr><th scope="row">I/O</th><td colspan="2">2 opto-isolated inputs, 2 relay outputs (NO)</td></tr>
+            <tr><th scope="row">USB</th><td colspan="2">USB-OTG, USB host</td></tr>
+            <tr><th scope="row">Vehicle</th><td colspan="2">Vehicle unique-ID identification (standard)</td></tr>
+            <tr><th scope="row">Options</th><td colspan="2">4G LTE modem, CAN-FD, RS485 (depending on purchase configuration)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Dimensions -->
+      <div class="dims" id="dimensions">
+        <figure class="sheet">
+          <a class="sheet-link" href="assets/img/fareopen-dimensions.png" target="_blank" rel="noopener">
+            <img class="drawing" src="assets/img/fareopen-dimensions.png" width="1060" height="1040" loading="lazy"
+                 alt="Dimension drawing of the fareOpen F9XX: front view 183 mm wide by 186 mm high, side view 35.1 mm deep, and bottom view of the connector panel, with callouts 1 to 10">
+          </a>
+          <figcaption class="titleblock">
+            <span>REYNORD</span><span>fareOpen F9XX</span><span>Dimensions</span><span>mm</span>
+          </figcaption>
+        </figure>
+
+        <div class="dims-side">
+          <h3 class="h3">Dimensions</h3>
+          <p>All dimensions in mm, from the F9XX datasheet drawing. Select the drawing to open it full size.</p>
+          <dl class="dimstats">
+            <div><dt>Height</dt><dd>186</dd></div>
+            <div><dt>Width</dt><dd>183</dd></div>
+            <div><dt>Depth</dt><dd>32 <small>without mount piece</small></dd></div>
+            <div><dt>Display area</dt><dd>154.21 <small>× 85.92</small></dd></div>
+          </dl>
+          <ol class="legend">
+            <li>DC power input &amp; vehicle unique-ID port</li>
+            <li>RS485, CAN &amp; I/O port</li>
+            <li>USB-OTG port</li>
+            <li>USB host port</li>
+            <li>Ethernet &amp; PoE connector</li>
+            <li>QR code scanner camera</li>
+            <li>VESA 75 mount</li>
+            <li>Reset pin hole</li>
+            <li>Display</li>
+            <li>Contactless reader</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ F300 ============ -->
+  <section class="section section-dark" id="f300" aria-labelledby="f300-title">
+    <div class="wrap">
+      <header class="section-head split">
+        <div>
+          <p class="eyebrow"><span class="idx">02</span> F300 series · Time &amp; access control</p>
+          <h2 id="f300-title">Time attendance and access control in one terminal.</h2>
+        </div>
+        <div>
+          <p class="lead">F300 is a contactless RFID terminal for the workplace. Staff present a MIFARE card, pick an action on the touch screen, and the event goes to your system over Wi-Fi or Ethernet, using HTTP or MQTT secured with TLS 1.3. A relay output and two opto-isolated inputs take care of the door.</p>
+          <ul class="chips chips-dark" aria-label="Typical uses">
+            <li>Time attendance</li><li>Access control</li><li>Duty trips</li><li>Absences</li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="f300-top">
+        <figure class="stage f300-stage">
+          <img src="assets/img/f300-front.webp" width="1270" height="1039" loading="lazy"
+               alt="F300 terminal with a German time-clock screen: Kommen, Dienstgang Beginn, Dienstgang Ende, Abwesenheiten and Gehen buttons above the contactless reader">
+          <figcaption>F300 · 800 × 480 · 5-point capacitive touch</figcaption>
+        </figure>
+
+        <div class="table-card f300-specs">
+          <h3 class="table-title">Technical data</h3>
+          <table class="spec-table spec-2col">
+            <tbody>
+              <tr><th scope="row">Display</th><td>800 × 480 TFT</td></tr>
+              <tr><th scope="row">Touch screen</th><td>Capacitive, 5 points</td></tr>
+              <tr><th scope="row">Contactless</th><td>MIFARE, ISO 14443</td></tr>
+              <tr><th scope="row">Wi-Fi</th><td>2.4 GHz, 802.11 b/g/n</td></tr>
+              <tr><th scope="row">Ethernet</th><td>10/100BASE-T</td></tr>
+              <tr><th scope="row">I/O</th><td>Relay output (NO), 2 opto-isolated inputs</td></tr>
+              <tr><th scope="row">Audio</th><td>Real audio output, 3 W speaker</td></tr>
+              <tr><th scope="row">Storage</th><td>SD card, up to 8 GB</td></tr>
+              <tr><th scope="row">Configuration</th><td>Built-in admin panel</td></tr>
+              <tr><th scope="row">Protocols</th><td>HTTP, MQTT · TLS 1.3</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <ol class="features features-cards">
+        <li>
+          <h3>Clear touch interface</h3>
+          <p>800 × 480 TFT with 5-point capacitive touch: large, finger-friendly actions for arrival, departure, duty trips and absences.</p>
+        </li>
+        <li>
+          <h3>MIFARE reader</h3>
+          <p>Reads ISO 14443 MIFARE cards and tags, so staff badge in with the credentials they already carry.</p>
+        </li>
+        <li>
+          <h3>Wi-Fi or Ethernet</h3>
+          <p>2.4 GHz 802.11 b/g/n wireless, or wired 10/100BASE-T where a cable is already in the wall.</p>
+        </li>
+        <li>
+          <h3>Door control built in</h3>
+          <p>A normally-open relay output for the lock and two opto-isolated inputs, for example for a door contact or exit button.</p>
+        </li>
+        <li>
+          <h3>Real audio</h3>
+          <p>A 3 W speaker gives clear spoken and audible feedback at every tap.</p>
+        </li>
+        <li>
+          <h3>On-board storage</h3>
+          <p>SD card memory up to 8 GB on the terminal.</p>
+        </li>
+        <li>
+          <h3>Admin panel</h3>
+          <p>A built-in admin panel makes settings and configuration straightforward.</p>
+        </li>
+        <li>
+          <h3>Secure integration</h3>
+          <p>Built-in HTTP and MQTT, encrypted with TLS 1.3, to connect to HR, time-management or IoT back ends.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="cta">
+        <svg class="cta-mark" viewBox="0 0 6991 691" aria-hidden="true"><use href="#logo"/></svg>
+        <div class="cta-copy">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Planning a rollout? Let’s talk.</h2>
+          <p>Tell us what your terminals need to read, where they will be installed and which back end they report to. Turnstile versions and options such as 4G LTE, CAN-FD and RS485 are available on request.</p>
+        </div>
+        <div class="cta-actions">
+          <!-- TODO: confirm the public contact address before going live -->
+          <a class="btn btn-accent" href="mailto:info@reynord.com?subject=Product%20inquiry%20via%20reynord.com">info@reynord.com</a>
+          <a class="btn btn-ghost" href="assets/docs/Reynord_F9XX_Validator_Datasheet.pdf" download>F9XX datasheet · PDF</a>
+          <address class="cta-address">
+            <span class="k">Address</span>
+            REYNORD<br>Imstedt 12<br>Hamburg, Germany
+          </address>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <svg class="logo" viewBox="0 0 6991 691" role="img" aria-label="REYNORD"><use href="#logo"/></svg>
+      <p>Contactless RFID terminals for fare collection, time attendance and access control.</p>
+      <address class="footer-address">Imstedt 12<br>Hamburg, Germany</address>
+    </div>
+    <nav aria-label="Products">
+      <h2>Products</h2>
+      <a href="#fareopen">fareOpen F910</a>
+      <a href="#fareopen">fareOpen F930</a>
+      <a href="#f300">F300 series</a>
+    </nav>
+    <nav aria-label="Resources">
+      <h2>Resources</h2>
+      <a href="#f9xx-specs">F9XX technical data</a>
+      <a href="#dimensions">F9XX dimensions</a>
+      <a href="assets/docs/Reynord_F9XX_Validator_Datasheet.pdf" download>F9XX datasheet (PDF)</a>
+    </nav>
+    <nav aria-label="Company">
+      <h2>Company</h2>
+      <a href="#contact">Contact</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="https://www.reynord.com">www.reynord.com</a>
+    </nav>
+  </div>
+  <div class="wrap footer-base">
+    <span>© 2026 REYNORD. All rights reserved.</span>
+    <span>Specifications subject to change without notice.</span>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
