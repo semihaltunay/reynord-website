@@ -255,72 +255,13 @@
           <h3>Premium time made visible</h3>
           <p>Time approval shows night and Sunday time separately from regular hours.</p>
         </li>
+        <li class="law-wide">
+          <p class="law">DATEV</p>
+          <h3>DATEV-compliant record files</h3>
+          <p>CleanSys generates DATEV-compliant record files from approved working time, ready for your payroll office or tax advisor to import.</p>
+        </li>
       </ul>
       <p class="fineprint">CleanSys records and prepares working time for payroll (pre-payroll). Taxes, social-security contributions and net pay are calculated in your payroll system.</p>
-    </div>
-  </section>
-
-  <!-- ============ SECURITY ============ -->
-  <section class="section section-dark" id="security" aria-labelledby="security-title">
-    <div class="wrap">
-      <header class="section-head split">
-        <div>
-          <p class="eyebrow"><span class="idx">05</span> F300 + CleanSys</p>
-          <h2 id="security-title">Records that hold up to an audit.</h2>
-        </div>
-        <p class="lead">The terminal and the platform are designed together, so a clock event cannot be quietly changed, dropped or invented between the wall and the payroll office.</p>
-      </header>
-
-      <div class="chain-layout">
-        <figure class="chain" aria-label="Illustration of three hash-chained clock events">
-          <div class="chain-block">
-            <span class="chain-k">seq</span><span class="chain-v">1041</span>
-            <span class="chain-k">event</span><span class="chain-v">clock_in · 05:58</span>
-            <span class="chain-k">prev</span><span class="chain-v">4c1e…a07b</span>
-            <span class="chain-k">hash</span><span class="chain-v chain-hash">9f3a…12cd</span>
-          </div>
-          <div class="chain-link" aria-hidden="true"></div>
-          <div class="chain-block">
-            <span class="chain-k">seq</span><span class="chain-v">1042</span>
-            <span class="chain-k">event</span><span class="chain-v">clock_in · 06:02</span>
-            <span class="chain-k">prev</span><span class="chain-v chain-hash">9f3a…12cd</span>
-            <span class="chain-k">hash</span><span class="chain-v chain-hash2">e81b…6f40</span>
-          </div>
-          <div class="chain-link" aria-hidden="true"></div>
-          <div class="chain-block">
-            <span class="chain-k">seq</span><span class="chain-v">1043</span>
-            <span class="chain-k">event</span><span class="chain-v">clock_out · 09:31</span>
-            <span class="chain-k">prev</span><span class="chain-v chain-hash2">e81b…6f40</span>
-            <span class="chain-k">hash</span><span class="chain-v">27d9…c3e5</span>
-          </div>
-          <figcaption>Illustration: each event carries the hash of the one before it.</figcaption>
-        </figure>
-
-        <ul class="sec-list">
-          <li><h3>Gap-free numbering</h3><p>Every terminal numbers its events in sequence; a missing or repeated number is detected.</p></li>
-          <li><h3>Hash chain</h3><p>Each event contains the SHA-256 hash of the previous one, so editing or deleting any event breaks the chain.</p></li>
-          <li><h3>Duplicate-safe</h3><p>A batch that is sent twice is recognised, and no event is ever stored twice.</p></li>
-          <li><h3>Two clocks</h3><p>Terminal time and server time are both kept. Drift beyond a configurable limit is flagged or rejected.</p></li>
-          <li><h3>Encrypted transport</h3><p>The F300 talks to CleanSys over HTTPS with TLS 1.3.</p></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ROADMAP ============ -->
-  <section class="section" id="roadmap" aria-labelledby="roadmap-title">
-    <div class="wrap">
-      <header class="section-head">
-        <p class="eyebrow"><span class="idx">06</span> Roadmap</p>
-        <h2 id="roadmap-title">In development.</h2>
-      </header>
-      <ul class="roadmap">
-        <li><span class="badge">In development</span><h3>Shift planning</h3><p>Recurring shift patterns, team assignments and rest-period checks under ArbZG.</p></li>
-        <li><span class="badge">In development</span><h3>Absences</h3><p>Vacation requests, sick leave and electronic sick notes (eAU).</p></li>
-        <li><span class="badge">In development</span><h3>DATEV export</h3><p>Pre-payroll export in DATEV formats, with period locking.</p></li>
-        <li><span class="badge">In development</span><h3>Sofortmeldung</h3><p>Immediate social-security registration before a new employee's first shift.</p></li>
-      </ul>
-      <p class="fineprint">Planned features. Scope and timing may change.</p>
     </div>
   </section>
 
